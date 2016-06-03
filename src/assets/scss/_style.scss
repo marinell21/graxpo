@@ -1,0 +1,69 @@
+@import "components/slick.scss";
+
+.ba-menu-toggle {
+	padding: 20px 0 0;
+	@include breakpoint(medium) {
+		display: none;
+	}
+}
+.ba-main-nav {
+	@media screen and #{breakpoint(small down)}{
+		display: none;
+	}
+}
+.ba-logo {
+	@media #{breakpoint(medium)}{
+		height: 78px;
+		line-height: 78px;
+	}
+	font-size: 36px;
+	display: block;
+	font-family: $header-font-family;
+}
+.ba-main-menu {
+	@media #{breakpoint(medium down)}{
+		border-top: 1px solid $light-gray;
+		padding-top: 10px;
+	}
+	li {
+		a {
+			@media #{breakpoint(medium)}{
+				height: 78px;
+				line-height: 78px;
+				padding: 0 0 0 24px;
+			}
+			color: #333b46;
+			font-family: 'Open Sans', sans-serif;
+			padding: 5px 0;
+			font-size: 16px;
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+}
+
+@import "slider.scss";
+
+.top-bar {
+	background: url(../img/element.jpg) 50% no-repeat;
+	background-size: cover;
+	padding-bottom: 343px;
+	&__title {
+		text-align: center;
+		font-family: 'Open Sans', sans-serif;
+		padding-top: 257px;
+		font-size: rem-calc(34);
+		letter-spacing: 5px;
+	}
+	&__subtitle {
+		text-align: center;
+		color: #81868E;
+		font-family: 'Open Sans', sans-serif;
+		font-size: rem-calc(16);
+		letter-spacing: 10px;
+	}
+}
+.ba-map {
+	height: 500px;
+}

@@ -1,0 +1,21 @@
+.ba-slider {
+margin-bottom: 20px;
+}
+.ba-slide {
+	min-height: 400px;
+	position: relative;
+	&__caption {
+		position: absolute;
+		left: 36px;
+		bottom: 36px;
+		background: rgba($primary-color, .8);
+		color: #FFF;
+		padding: 20px;
+	}
+	&__title {
+		color: #FFF;
+	}
+}
+.ba-slider-thumbs {
+	margin-bottom: 20px;
+}
